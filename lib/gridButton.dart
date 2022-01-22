@@ -20,9 +20,9 @@ class GridButton extends StatelessWidget {
             shape: MaterialStateProperty.all(RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10))),
             backgroundColor: MaterialStateProperty.all(buttonColor)),
-        onPressed: ()=>clickGrid
-        // print(" print ${text}");
-
-        );
+        onPressed: () {
+          clickGrid();
+          print(" print ${text}");
+        });
   }
 }
